@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'boxr'
 require 'rest-client'
-require 'hashie'
 require 'json'
 
 get '/oauth' do
