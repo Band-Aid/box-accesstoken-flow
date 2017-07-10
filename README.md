@@ -1,3 +1,3 @@
 # box-accesstoken-flow
 
-Box oauth flow simple sample 
+Super simple Box oauth flow simple sample 
