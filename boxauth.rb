@@ -13,11 +13,11 @@ get '/authenticate' do
 end
 
 def gettoken(code)
-    
+    begin
     res = RestClient.post('https://api.box.com/oauth2/token', {grant_type: 'authorization_code', code: code, client_id: 'xxx', client_secret: 'xxx'})
     parsed = JSON.parse(res.body)    
 
-    begin
+    
     rescue Exception => e
         return e.message
     end
