@@ -8,7 +8,8 @@ get '/oauth' do
 end
 
 get '/authenticate' do
-   redirect to("https://account.box.com/api/oauth2/authorize?response_type=code&client_id=uxxx&redirect_uri={your redirect url}/oauth&state=xxx")
+    #set the redirect URL to get /oauth
+   redirect to("https://account.box.com/api/oauth2/authorize?response_type=code&client_id=uxxx&redirect_uri={your redirect url + /oauth}&state=xxx")
 end
 
 def gettoken(code)
