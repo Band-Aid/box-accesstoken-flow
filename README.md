@@ -1,6 +1,7 @@
 # box-accesstoken-flow
 
 Super simple Box oauth flow simple sample 
+
 Replace client_id, client_secret, redirect_uri with your Box Application parameters.
 Deploy app, access http://hostname/authenticate
 
